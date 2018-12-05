@@ -7,6 +7,8 @@ int main()
   int dog_age = 6;
   //This version of the program is for dogs older than 2 years old.
   
+  string dog_name;
+  
   int human_years;
   int early_years = 21;
   //This version of the program is for dogs younger than 2 years old or equal.
@@ -15,6 +17,8 @@ int main()
   later_years = (dog_age-2)*4;
   human_years = early_years+later_years;
   
-  std::cout<< "My name is Simba! Ruff ruff, I am " << human_years << " years old in human years.";
+  std::cout<<"Please enter your dog's name.";
+  std::cin>> dog_name;
+  std::cout<< "My name is " << dog_name << "! Ruff ruff, I am " << human_years << " years old in human years.";
     
 }
